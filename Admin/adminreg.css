@@ -1,0 +1,91 @@
+body{
+  margin:0;
+  /*margin-left: 10em;*/
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
+  font-family: candara;
+}
+
+.container
+{
+	width: 55%;
+	top: 3em;
+	position: relative;
+	/*box-shadow: 25px 25px 27px rgba(0, 0, 0, 0.25),
+	10px 10px 70px rgba(0, 0, 0, 0.25),
+	inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+	inset 5px 5px 20px rgba(225, 225, 225, 0.2),
+	inset -5px -5px 10px rgba(0, 0, 0, 0.75);
+	border-radius: 10px;
+	background: teal;*/
+}
+
+.card
+{
+	background: url(../images/logo.png);
+	background-repeat: no-repeat;
+	/*background-size: cover;*/
+	background-position: center 70%;
+	box-shadow: 2px 1px 4px 2px,
+	2px 1px 2px
+	/*inset 1px 2px 4px blacksmoke,
+	inset -1px -3px 4px blacksmoke;*/
+
+}
+
+
+.card-header
+{
+	background: teal;
+}
+
+.form-label
+{
+	color: black;
+	font-weight: 550;
+	font-size: 15px;
+}
+
+.form-control
+{
+	border: none;
+	background: transparent;
+	border-bottom: 1px  solid black;
+	color: black;
+	/*width: 60%;*/
+
+}
+
+.form-control:focus
+{
+	box-shadow: none;
+	background: transparent;
+	outline: 0;
+
+}
+.card .btn-xl
+{
+	border: 2px solid teal;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	width: 120px;
+	background: transparent;
+	color: black;
+}
+
+.card .btn-xl:hover
+{
+	transition: 1s ease;
+	background: teal;
+	color: white;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+}
+.form-control::placeholder
+{
+	color: black;
+	font-weight: 300;
+}

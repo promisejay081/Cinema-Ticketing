@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+
+    <!-- Title Page-->
+    <title>Registration</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" type="text/css" href="wowjs/css/libs/animate.css">
+    <link rel="stylesheet" type="text/css" href="adminreg.css">
+
+
+
+
+    <!-- Main CSS-->
+    <link href="css/theme.css" rel="stylesheet" media="all">
+    <script type="text/javascript" src="wowjs/wow.min.js"></script>
+
+
+        <script>
+        new WOW().init();
+      </script>
+
+</head>
+    <body>
+        <div class="container p-3">
+            <div class="card p-4">
+                <div class="card-body p-3">
+                    <h3 class="card-header border-0 text-light">Create Account</h3>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label class="form-label">Surname</label>
+                                <input type="text" class="form-control" id="" placeholder="Enter Surname" id="sname">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="" aria-describedby="emailHelp" placeholder="Email Address" id="email">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                             <div class="mb-3">
+                                <label class="form-label">Firstname</label>
+                                <input type="text" class="form-control" id="" placeholder="Enter Firstname" fname>
+                            </div>
+
+                            
+
+                            <div class="mb-3">
+                                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password" id="pass">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <center> -->
+                        <button type="submit" class="btn btn-xl mt-3" id="reg">Submit
+                            <i class="fa fa-arrow-right ml-3"></i>
+                        </button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+    <!-- Jquery JS-->
+
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="vendor/slick/slick.min.js">
+    </script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script src="vendor/animsition/animsition.min.js"></script>
+    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="vendor/select2/select2.min.js">
+    </script>
+
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+    
+    <script>
+        var arr = [];
+        reg=()=>
+        {
+        
+        var obj= {
+            surName : sname.value,
+            firsName : fname.value,
+            eMail : email.name,
+            passWord : pass.value 
+        }
+        arr.push(obj);
+      
+            localStorage.admin = JSON.stringify(arr);
+
+    }
+    </script>

@@ -1,0 +1,62 @@
+.card
+{
+	width: 55%;
+	margin: auto;
+	box-shadow: 2px 1px 2px 3px
+}
+
+.card .first
+{
+	background: url(../images/logo.png);
+	background-size: 100%  center;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 50vh;
+}
+
+.card img
+{
+	width: 150px;
+	height: 150px;
+	border-radius: 100px;
+	margin: auto;
+	place-items: center;
+	display: grid;
+	top: 2em;
+	position: relative;	
+}
+
+.card .form-control
+{
+	/*border-radius: 30px;*/
+	/*box-shadow: i5px 5px 5px #cbced1,
+     -15px -15px 15px #ffffff;*/
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.card .form-control:focus
+{
+	box-shadow: none;
+	outline: 0;
+	background: white;
+}
+
+.card .btn-success
+{
+	margin: auto;
+	color: black;
+	width: 120px;
+	background: transparent;
+		/*border-left: 5em;
+		border-right: 5em;*/
+}
+
+.card .btn-success:hover
+{
+	transition: 1s;
+	background:  #1E7E34;
+	color: white;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}

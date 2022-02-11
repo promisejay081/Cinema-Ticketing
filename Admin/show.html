@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+
+    <!-- Title Page-->
+    <title>Cinema</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" type="text/css" href="wowjs/css/libs/animate.css">
+    <link rel="stylesheet" type="text/css" href="dashboard.css">
+
+
+
+
+    <!-- Main CSS-->
+    <link href="css/theme.css" rel="stylesheet" media="all">
+    <script type="text/javascript" src="wowjs/wow.min.js"></script>
+
+
+        <script>
+        new WOW().init();
+      </script>
+
+</head>
+  <body>
+ <div id="wrapper" class="dar">
+
+  <aside id="sidebar-wrapper">
+    <div class="sidebar-brand p-1 m-2">
+      <img src="../images/sk.png">
+      <h2 class="p-3 my-2 change">FEMZY B</h2>
+    </div>
+    <ul class="sidebar-nav">
+      <li class="active">
+        <a href="#"><i class="fa fa-tachometer-alt"></i>Dashboard</a>
+      </li>
+
+      <li>
+        <a href="staffaccount.html"><i class="fa fa-users"></i>Add Staffs</a>
+      </li>
+
+       <li>
+        <a href="staffdetails.html"><i class="fa fa-users"></i>Preview Staffs</a>
+      </li>
+
+      <li>
+        <a href="customersinfo.php"><i class="fa fa-users"></i>Customers</a>
+      </li>
+
+      <li>
+        <a href="show.html"><i class="fa fa-sort"></i>Arrange Chairs</a>
+      </li>
+
+      <li>
+        <a href="#"><i class="fa fa-user"></i>Profile</a>
+      </li>
+       <li>
+        <a href="logout.php"><i class="fa fa-power-off"></i>Logout</a>
+      </li>
+    </ul>
+  </aside>
+
+  <div id="navbar-wrapper">
+    <nav class="navbar navbar-inverse bg-dark">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand" id="sidebar-toggle"><i class="fa fa-bars"></i></a>
+        </div>
+
+
+        <div class="ml-auto p-2" style="display: flex">
+           <i class="fa fa-bell" style="color: white"></i>
+           <span class="bg-danger" style="top: -0.7em;position: relative;border-radius: 100%;height: 23px;width: 23px;padding-left: 5px;right: 5px">
+            <h4 class="text-light" style="font-size: 200">3</h4>
+          </span>
+        </div>
+
+
+        <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+        <a class="nav-link" href="#">
+          <img src="../images/4.jpg" width="50" height="40" class="rounded-circle">
+          <span style="font-size: 18px">Joe Don </span>
+        </a>
+      </li>   
+    </ul>
+
+    </nav>
+  </div>
+
+  <section id="content-wrapper">
+      <div class="row">
+          <div class="col-lg-6">
+              <input type="text" name="" id="nc" class="form-control" placeholder="Total Chairs wants">
+          </div>
+
+          <div class="col-lg-6">
+              <input type="text" name="" id="npr" class="form-control" placeholder="No many per row">
+
+                <!-- <button class="btn btn-success" onclick="arranger()">Arrange Chairs</button> -->
+
+                <button onclick="sub()">Submit</button>
+          </div>
+      </div>
+    <table id="hall">
+
+    </table>
+  <i class="bg-dark p-2 my-5 fa fa-cog fa-2x  change-them" id="theme-button"></i>
+  
+     
+  </section>
+
+
+  </body>
+</html>
+
+
+
+    <!-- Jquery JS-->
+
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="vendor/slick/slick.min.js">
+    </script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script src="vendor/animsition/animsition.min.js"></script>
+    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="vendor/select2/select2.min.js">
+    </script>
+
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+    <script>
+        // var noOfChair = 0;
+        // var noPerRow = 0;
+        // var chair = '';
+        // var cArranged;
+
+        // arranger=()=> 
+        // {
+        //     noOfChair = nc.value;
+        //     noPerRow = npr.value;
+        //     cArranged = 0;
+
+        //     chair = '<tr>'
+        //     for (let x = 0; x < noOfChair; x++) {
+        //         chair += '<td><img src="../images/21.jfif" alt="" width="200" height="250"></td>';
+        //         cArranged++;
+        //         if (cArranged == noPerRow) {
+        //             chair += '</tr><tr>';
+        //             cArranged = 0;
+        //         }
+        //     }
+        //     chair += '</tr>';
+        //     document.getElementById("hall").innerHTML = chair;
+        // }
+
+        // }
+
+        sub=()=>
+        {
+          let c = [];
+          let ch = {
+            "ca":nc.value,
+          }
+          c.push(ch);
+             datas = localStorage.chair = JSON.stringify(ch);
+            
+            // let newData = [...datas, ch];
+            // localStorage.setItem("chair", JSON.stringify(newData))
+
+          }
+          let count = '';
+
+      if (window.localStorage.chairs) 
+      {
+        jUser = window.localStorage.getItem("chairs");
+        cus = JSON.parse(jUser);
+        for (i=0; i<cus.length; i++) {
+        count += '<td><img src="../images/21.jfif" alt="" width="200" height="250"></td>'+cus[i].ca+"</td></tr>"
+            // b += "<tr id='index'><td>"+i+"</td><td>"+cus[i].ca+"</td></tr>";
+          }
+            count.innerHTML = count;
+
+        }
+            // +customers[i].firstname+"</td><td>"
+
+        
+    </script>
+
+    <script>
+    const $button  = document.querySelector('#sidebar-toggle');
+  const $wrapper = document.querySelector('#wrapper');
+
+  $button.addEventListener('click', (e) => {
+    e.preventDefault();
+    $wrapper.classList.toggle('toggled');
+  });
+
+  const themeButton = document.getElementById('theme-button')
+  const darktheme='dark-theme';
+
+
+  themeButton.addEventListener('click', ()=>{
+    document.body.classList.toggle(darktheme);
+    themeButton.classList.toggle(iconTheme);
+  });
+
+</script>
+
+
+    
+

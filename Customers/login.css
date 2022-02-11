@@ -1,0 +1,125 @@
+body {
+   font-family: candara; 
+   margin: 0;
+}
+.container
+{
+	margin: auto;
+	place-items: center;
+	display: grid;
+}
+
+.card
+{
+	width: 45%;
+	box-shadow: 2px 1px 2px 3px;
+	top: 2em;
+	position: relative;
+}
+
+.card img
+{
+	width: 150px;
+	height: 200px;
+	margin: auto;
+	place-items: center;
+	display: grid;
+}
+
+label
+{
+	display: none;
+	color: teal;
+	font-weight: 450;
+	font-size: 15px;
+	text-transform: uppercase;
+
+}
+.card .text-center
+{
+	font-size: 18px;
+	font-family: 500
+}
+
+.card .form-control
+{
+
+    /*border-radius: 100px;
+    box-shadow: 2px 2px 2px 1px #474343, -2px 2px 4px #fff;*/
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.card .form-control:focus
+{
+	box-shadow: none;
+}
+
+.second
+{
+	background: url(../images/log.png);
+  	background-size: 100% top 100%;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	height: 60vh;
+}
+
+.second h2
+{
+	color: black;
+	/*top: 3em;*/
+	position: relative;
+	/*left: 2em;*/
+}
+
+.card .btn-xl
+{
+	/*width: 30%;*/
+	/*margin: auto;*/
+	color: black;
+	/*float: left;*/
+	background: transparent;
+	/*border-radius: 50px;*/
+	border: 2px solid #006D72;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+
+	/*border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;*/
+
+	width: 120px
+}
+.card .btn-xl:hover
+{
+	background: #006D72;
+	color: white;
+	transition: 1s ease-in;
+}
+.card .btn-button
+{
+	border: 2px solid #28A745;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	/*border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;*/
+	width: 120px;
+	background: transparent;
+	color: black;
+}
+.card .btn-button a
+{
+	color: black;
+
+}
+.card .btn-button:hover
+{
+	background: #28A745;
+	color: white;
+	transition: 1s ease-in;
+}
+
+.card .btn-button a:hover
+{
+	color: white;
+
+}

@@ -1,0 +1,59 @@
+.container
+{
+	place-items: center;
+	display: grid;
+	top: 7em;
+	position: relative;
+	font-weight: 500
+}
+.card
+{
+	box-shadow: 2px 2px 4px 2px #474343, -2px 2px 4px 2px #fff;
+	width: 60%
+}
+label
+{
+	color: teal;
+	font-size: 15px;
+}
+.form-control:focus
+{
+	outline: 0;
+	border: none;
+	background: white;
+	color: #495057;
+	box-shadow: none;
+	border-bottom: 1px solid black;
+
+}
+
+.form-control
+{
+	border: none;
+	border-bottom: 1px solid black
+}
+
+.second
+{
+	top: 2em;
+	position: relative;
+}
+.second img
+{
+ /* border-radius: 80%;
+  box-shadow: 0px 0px 2px teal,
+  0px 0px 0px 5px teal;*/
+  /*height: 180px;*/
+  width: 150px;
+  place-items: center;
+  display: grid;
+  margin: auto;
+
+}
+
+.btn-success
+{
+	place-items: center;
+	display: grid;
+	margin: auto;
+}

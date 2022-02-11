@@ -1,0 +1,31 @@
+.container
+{
+    width: 55%;
+}
+.card
+{
+    box-shadow: 1px 2px 4px 2px,
+    1px 2px 4px;
+}
+.logo
+{
+    height: 120px;
+}
+
+.card .form-control
+{
+    border-radius: 10px;
+     /*box-shadow: 1px 1px 1px 1px,
+    1px 1px 1px;*/
+}
+
+label
+{
+    color: black;
+    font-weight: 500;
+}
+
+.card-body img
+{
+    width: 100px;
+}
