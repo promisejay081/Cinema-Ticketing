@@ -49,19 +49,20 @@
                     <div class="form-group col-lg-6 p-5">
                         <h3 class="card-header bg-light border-0">Sign In</h3>
                         <br>
+                        <p id="message" class="text-danger"></p>
                         <label class="email">Email</label>
-                        <input type="email" name="" placeholder="Email Address" class="form-control">
+                        <input type="email" name="" placeholder="Email Address" class="form-control" id="email">
                         <br>
-
+                          <p id="message1" class="text-danger"></p>
                         <label>Password</label>
-                        <input type="password" name="" placeholder="Email Address" class="form-control">
+                        <input type="password" name="" placeholder="Password" class="form-control" id="password">
                     </div>
 
                     <div class="col-lg-6 my-5 second">
                         <img src="../images/logo.png">
                     </div>
 
-                    <button class="btn btn-success">Login</button>
+                    <button class="btn btn-success" onclick="login()">Login</button>
                 </div>
             </div>
         </div>
@@ -96,16 +97,36 @@
     <script src="js/main.js"></script>
 
     <script>
-    function login()
+  
+
+    login=()=>
     {
-        let data = JSON.parse(localStorage.getItem("ITUsers"));
-        for (var i = 0; i <= data.length; i++) {
-            if(uname.value == data[i].uname && password.value == data[i].password){
-                window.open("show.html")
-                break;
-            } else {
-                alert("User not found");
-                break;
+        let data = JSON.parse(localStorage.getItem("lTUser"));
+        // console.log(data);
+        for (i = 0; i < data.length; i++) {
+
+            if(email.value == data[i].email && password.value == data[i].Password)
+            {
+                window.open("book.html")
+                // break;
+            }
+            else if (email.value == "") 
+            {
+                // document.getElementById('email').style.border= "2px solid red";
+                document.getElementById('email').focus();
+                message.innerHTML = "Please enter a valid email";
+                // break;
+            }
+             else if (password.value =="") 
+            {
+                // document.getElementById('email').style.border= "2px solid red";
+                document.getElementById('password').focus();
+                message1.innerHTML = "Enter your Password";
+                // break;
+            }            
+            else{
+                message.innerHTML ="<p class='bg-danger text-light p-2'>Incorrect Username or Password</p>";
+                //break;
             }
         }
     }

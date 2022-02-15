@@ -200,26 +200,26 @@
     {
         jUser = window.localStorage.getItem("lTUser");
         staffs = JSON.parse(jUser);
-        for(i=0; i<staffs.alluser.length; i++)
+        for(i=0; i<staffs.length; i++)
         {
-            b += "<tr id='index'><td>"+i+"</td><td>"
-            +staffs.alluser[i].Firstname+"</td><td>"
-            +staffs.alluser[i].Lastname+"</td><td>"
-            +staffs.alluser[i].Phone+"</td><td>"
-            +staffs.alluser[i].Address+"</td><td>"
-            +staffs.alluser[i].Email+"</td><td>"
+            b += "<tr id='index'><td>"+`${i+1}`+"</td><td>"
+            +staffs[i].Firstname+"</td><td>"
+            +staffs[i].Lastname+"</td><td>"
+            +staffs[i].Phone+"</td><td>"
+            +staffs[i].Address+"</td><td>"
+            +staffs[i].email+"</td><td>"
             +'<button class="bg-danger text-light fa fa-trash p-3" onclick="remove('+i+')"></button>'+"</td><td>"
             +'<button class="bg-success text-light fa fa-pencil-square-o p-3" onclick="edit('+i+')"></button>'+"</td><tr>"
         } 
         l.innerHTML = b; 
     }
-    remove=(e)=>
+    remove=(i)=>
     {
-        userList = JSON.parse(window.localStorage.getItem("lTUser")).alluser;
+        userList = JSON.parse(window.localStorage.getItem("lTUser"));
         // editableUser = userList[e]
-        newList = userList.splice(e, 1);
-        alert(e);
-        window.localStorage.setItem("lTUser", JSON.stringify({"alluser": userList}));
+        newList = userList.splice(i, 1);
+        alert(i);
+        window.localStorage.setItem("lTUser", JSON.stringify(userList));
         location.reload(); 
     }
 

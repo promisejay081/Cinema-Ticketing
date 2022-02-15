@@ -198,29 +198,34 @@
 
 <script>
     // document.getElementById('fname').focus();
-    if (!window.localStorage.lTUser) 
-    {
-        var staffs = {"alluser":[]};
-    }
-
+    // if (!window.localStorage.lTUser) 
+    // {
+    //     var staffs = {"alluser":[]};
+    // }
+      var staffs = [];
+      staffs = localStorage.lTUser ? JSON.parse(localStorage.lTUser) : staffs = [];
     reg=(p)=>
     {
-        if (window.localStorage.lTUser) 
-        {
-            jUser=window.localStorage.getItem("lTUser");
-            staffs = JSON.parse(jUser)
-        }
-        staffs.alluser.push({
+
+        // if (window.localStorage.lTUser) 
+        // {
+        //     jUser=window.localStorage.getItem("lTUser");
+        //     staffs = JSON.parse(jUser)
+        // }
+        var result = {
             "Firstname":fname.value,
             "Lastname":lname.value,
             "Phone":num.value,
             "Address": loc.value,
-            "Email":email.value,
-            "Password":pass.value
-        });
-        console.log(staffs);
-        sUser = JSON.stringify(staffs);
-        window.localStorage.setItem("lTUser", sUser);
+            "email":email.value,
+            "Password":pass.value,
+        };
+        // console.log(staffs);
+        staffs.push(result);
+  window.localStorage.lTUser = JSON.stringify(staffs);
+
+        // sUser = JSON.stringify(staffs);
+        // window.localStorage.setItem("lTUser", sUser);
         location.reload();
     }
 </script>
