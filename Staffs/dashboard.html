@@ -8,7 +8,7 @@
     <meta name="keywords" content="au theme template">
 
     <!-- Title Page-->
-    <title>Staff Login</title>
+    <title>Home</title>
 
     <!-- Fontfaces CSS-->
     <link href="css/font-face.css" rel="stylesheet" media="all">
@@ -28,7 +28,7 @@
     <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
     <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
     <link rel="stylesheet" type="text/css" href="wowjs/css/libs/animate.css">
-    <link rel="stylesheet" type="text/css" href="login.css">
+
 
 
 
@@ -37,33 +37,42 @@
     <script type="text/javascript" src="wowjs/wow.min.js"></script>
 
 
-        <script>
+    <script>
         new WOW().init();
-      </script>
+    </script>
 
 </head>
     <body>
         <div class="container">
-            <div class="card p-4">
-                <div class="row">
-                    <div class="form-group col-lg-9 p-5">
-                        <h3 class="card-header border-0 text-light">Sign In</h3>
-                        <br>
-                        <p id="message" class="text-danger"></p>
-                        <label class="email">Email</label>
-                        <input type="email" name="" placeholder="Email Address" class="form-control" id="email">
-                        <br>
-                          <p id="message1" class="text-danger"></p>
-                        <label>Password</label>
-                        <input type="password" name="" placeholder="Password" class="form-control" id="password">
-                    </div>
+            <div class="sidenav">
+                <ul>
+                    <li class="list-group">
+                        <div class="card">
+                            Dashboard
+                            <i class="fa fa-tachometer-alt"></i>
+                        </div>
+                    </li>
 
-                    <div class="col-lg-3 my-5 second">
-                        <img src="../images/log.png">
-                    </div>
+                     <li class="list-group">
+                        <div class="card">
+                            Customers
+                            <i class="fa fa-users"></i>
+                        </div>
+                    </li>
 
-                    <button class="btn btn-success" onclick="login()">Login <i class="fa fa-arrow-right ml-3"></i></button>
-                </div>
+                     <li class="list-group">
+                        <div class="card">
+                            Other Staffs
+                            <i class="fa fa-users"></i>
+                        </div>
+                    </li>
+
+                     <li>
+                        <div class="card">
+                            
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </body>
@@ -94,41 +103,5 @@
     </script>
 
     <!-- Main JS-->
-    <script src="js/main.js"></script>
-
-    <script>
-  
-
-    login=()=>
-    {
-        let data = JSON.parse(localStorage.getItem("lTUser"));
-        // console.log(data);
-        for (i = 0; i < data.length; i++) {
-
-            if(email.value == data[i].email && password.value == data[i].Password)
-            {
-                window.open("book.html")
-                // break;
-            }
-            else if (email.value == "") 
-            {
-                // document.getElementById('email').style.border= "2px solid red";
-                document.getElementById('email').focus();
-                message.innerHTML = "Please enter a valid email";
-                // break;
-            }
-             else if (password.value =="") 
-            {
-                // document.getElementById('email').style.border= "2px solid red";
-                document.getElementById('password').focus();
-                message1.innerHTML = "Enter your Password";
-                // break;
-            }            
-            else{
-                message.innerHTML ="<p class='bg-danger text-light p-2'>Incorrect Username or Password</p>";
-                //break;
-            }
-        }
-    }
-</script>
+    <!-- <script src="js/main.js"></script> -->
     

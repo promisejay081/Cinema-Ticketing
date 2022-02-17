@@ -7,10 +7,60 @@ body {
 	margin: auto;
 	place-items: center;
 	display: grid;
-}
 
+}
+.card-header
+{
+	box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.7);
+}
+.change
+{
+  animation: change 15s infinite;
+  }
+
+  @keyframes change{
+    0%
+    {
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/32.jpg);
+      background-size: cover;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 2em;
+    }
+    50%
+    {
+      background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/33.jpg);
+      background-size: cover;
+      width: 100%;
+      background-position: top;
+      background-repeat: no-repeat;
+      padding: 2em;
+    }
+    /*75%
+    {
+      background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/25.jpg);
+      background-size: cover;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 2em;
+    }*/
+    100%
+    {
+      background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/4.jpg);
+      background-size: cover;
+      width: 100%;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      padding: 2em;
+    }
+  }
 .card
 {
+   /*background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/32.jpg);*/
+	background-size: cover;
+	background-repeat: no-repeat;
 	width: 55%;
 	box-shadow: 2px 1px 2px 3px;
 	top: 2em;
@@ -47,7 +97,9 @@ label
     /*border-radius: 100px;
     box-shadow: 2px 2px 2px 1px #474343, -2px 2px 4px #fff;*/
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
+    background:  transparent;
+    color:  white;
 }
 
 .card .form-control:focus
@@ -76,7 +128,7 @@ label
 {
 	/*width: 30%;*/
 	/*margin: auto;*/
-	color: black;
+	color: white;
 	/*float: left;*/
 	background: transparent;
 	/*border-radius: 50px;*/
@@ -104,11 +156,11 @@ label
 	border-bottom-left-radius: 25px;*/
 	width: 120px;
 	background: transparent;
-	color: black;
+	color: white;
 }
 .card .btn-button a
 {
-	color: black;
+	color: white;
 
 }
 .card .btn-button:hover

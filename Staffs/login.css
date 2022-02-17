@@ -8,29 +8,34 @@
 }
 .card
 {
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/2.png);
+    background-size: cover;
+    background-position: 50% center 50%;
 	box-shadow: 2px 2px 4px 2px #474343, -2px 2px 4px 2px #fff;
-	width: 60%
+	width: 55%
+}
+
+.card-header
+{
+	box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.7);
+	border-radius: 100px;
 }
 label
 {
-	color: teal;
+	color: white;
 	font-size: 15px;
 }
-.form-control:focus
+.card .form-control
 {
-	outline: 0;
-	border: none;
-	background: white;
-	color: #495057;
-	box-shadow: none;
-	border-bottom: 1px solid black;
-
+    border: none;
+    border-bottom: 1px solid white;
+    background:  transparent;
+    color:  white;
 }
 
-.form-control
+.card .form-control:focus
 {
-	border: none;
-	border-bottom: 1px solid black
+	box-shadow: none;
 }
 
 .second
@@ -54,6 +59,17 @@ label
 .btn-success
 {
 	place-items: center;
-	display: grid;
+	/*display: grid;*/
 	margin: auto;
+	background:  transparent;
+	color:  white;
+	width: 120px;
+	border-color: #218838 rgba(0, 0, 0, 0.7);
+	box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, 0.7);
+	border-radius: 100px;
+}
+
+.btn-success:hover
+{
+	transition: 1s ease;
 }
